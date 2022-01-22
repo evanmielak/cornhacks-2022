@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
 # physics
-var speed : int = 200
+var speed : int = 400
 var jump_height : int = 600
-var gravity : int = 800
+var gravity : int = 1200
 var vel : Vector2 = Vector2()
 var grounded : bool = false
 
@@ -23,7 +23,6 @@ func _physics_process(delta):
 		vel.x -= speed
 	if Input.is_action_pressed("move_right"):
 		vel.x += speed
-	vel = move_and_slide(vel, Vector2.UP)
 	# gravity
 	vel.y += gravity * delta
 	# jump input
@@ -34,4 +33,6 @@ func _physics_process(delta):
 		sprite.flip_h = true
 	elif vel.x > 0:
 		sprite.flip_h = false
+		
+	vel = move_and_slide(vel, Vector2.UP)
 
