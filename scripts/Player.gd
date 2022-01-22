@@ -45,11 +45,22 @@ func _physics_process(delta):
 			jump_remaining = true
 			velocity.y = jump_speed
 		elif jump_remaining:
-			_update_wall_direction()
-			if dir != -wall_direction:
-				dir = -wall_direction
-				velocity.y = jump_speed
-				jump_remaining = false
+			for raycast in left_wall_raycasts.get_children():
+				print(raycast.is_colliding())
+				if raycast.is_colliding(): 
+					velocity.y = jump_speed
+					jump_remaining = false
+					return
+			for raycast in right_wall_raycasts.get_children():
+				print(raycast.is_colliding())
+				if raycast.is_colliding():
+					velocity.y = jump_speed
+					jump_remaining = false
+					return
+#			_update_wall_direction()
+#			if dir != -wall_direction:
+#				dir = -wall_direction
+				
 	if velocity.y != 0:
 		_animated_sprite.play("Jump")
 
