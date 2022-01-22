@@ -1,38 +1,28 @@
 extends KinematicBody2D
 
-# physics
-var speed : int = 400
-var jump_height : int = 600
-var gravity : int = 1200
-var vel : Vector2 = Vector2()
-var grounded : bool = false
+export (int) var speed = 400
+export (int) var jump_speed = -600
+export (int) var gravity = 1000
+export (float, 0, 1.0) var friction = 0.2
+export (float, 0, 1.0) var acceleration = 0.25
 
-# components
-onready var sprite = $Sprite
+var velocity = Vector2.ZERO
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func get_input():
+	var dir = 0
+	if Input.is_action_pressed("move_right"):
+		dir += 1
+	if Input.is_action_pressed("move_left"):
+		dir -= 1
+	if dir != 0:
+		velocity.x = lerp(velocity.x, dir * speed, acceleration)
+	else:
+		velocity.x = lerp(velocity.x, 0, friction)
 
 func _physics_process(delta):
-	# reset horizontal velocity
-	vel.x = 0
-	# movement inputs
-	if Input.is_action_pressed("move_left"):
-		vel.x -= speed
-	if Input.is_action_pressed("move_right"):
-		vel.x += speed
-	# gravity
-	vel.y += gravity * delta
-	# jump input
-	if Input.is_action_pressed("jump") and is_on_floor():
-		vel.y -= jump_height
-	# sprite direction
-	if vel.x < 0:
-		sprite.flip_h = true
-	elif vel.x > 0:
-		sprite.flip_h = false
-		
-	vel = move_and_slide(vel, Vector2.UP)
-
+	get_input()
+	velocity.y += gravity * delta
+	velocity = move_and_slide(velocity, Vector2.UP)
+	if Input.is_action_just_pressed("jump"):
+		if is_on_floor():
+			velocity.y = jump_speed
