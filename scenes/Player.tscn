@@ -12,19 +12,24 @@ extents = Vector2( 14, 32 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ), ExtResource( 5 ) ],
 "loop": true,
-"name": "idle",
+"name": "Idle",
 "speed": 2.0
 }, {
 "frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
 "loop": true,
-"name": "Running",
+"name": "RunningRight",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
 "loop": true,
-"name": "Jump",
+"name": "RunningLeft",
 "speed": 5.0
 } ]
 
@@ -38,5 +43,6 @@ shape = SubResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 4, 4 )
 frames = SubResource( 2 )
-animation = "Jump"
+animation = "RunningRight"
+frame = 1
 playing = true
