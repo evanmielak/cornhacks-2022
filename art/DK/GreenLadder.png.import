@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Barrel3.png-ea151ab3e9d9b3e63a88bbd06448393e.stex"
+path="res://.import/GreenLadder.png-f0b148cf0ff19c21b2f6e73e28af7f64.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Barrel3.png"
-dest_files=[ "res://.import/Barrel3.png-ea151ab3e9d9b3e63a88bbd06448393e.stex" ]
+source_file="res://art/DK/GreenLadder.png"
+dest_files=[ "res://.import/GreenLadder.png-f0b148cf0ff19c21b2f6e73e28af7f64.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Barrel2.png-eecc10edd9ef70f2fbac3169683e4ef7.stex"
+path="res://.import/Kinky.png-0b11ae965ae399fb7980b9d082c6b67d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Barrel2.png"
-dest_files=[ "res://.import/Barrel2.png-eecc10edd9ef70f2fbac3169683e4ef7.stex" ]
+source_file="res://art/PM/Kinky.png"
+dest_files=[ "res://.import/Kinky.png-0b11ae965ae399fb7980b9d082c6b67d.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Barrel.png-a670336e92002127c101b3371b773bec.stex"
+path="res://.import/GinkyDown.png-375c26c142c663b6f4eecb6926cbcaba.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Barrel.png"
-dest_files=[ "res://.import/Barrel.png-a670336e92002127c101b3371b773bec.stex" ]
+source_file="res://art/PM/GinkyDown.png"
+dest_files=[ "res://.import/GinkyDown.png-375c26c142c663b6f4eecb6926cbcaba.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

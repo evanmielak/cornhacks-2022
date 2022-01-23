@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GreenLadder.png-d72bff970021b94029083bcb9a15f54b.stex"
+path="res://.import/QrinkyInverse.png-b0df6298b2bdb3304973e48e00916e74.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/GreenLadder.png"
-dest_files=[ "res://.import/GreenLadder.png-d72bff970021b94029083bcb9a15f54b.stex" ]
+source_file="res://art/PM/QrinkyInverse.png"
+dest_files=[ "res://.import/QrinkyInverse.png-b0df6298b2bdb3304973e48e00916e74.stex" ]
 
 [params]
 
