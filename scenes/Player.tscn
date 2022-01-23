@@ -24,16 +24,16 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
 "loop": true,
-"name": "RunningRight",
+"name": "RunningLeft",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
 "loop": true,
-"name": "RunningLeft",
+"name": "RunningRight",
 "speed": 5.0
 } ]
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" groups=["Player"]]
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -43,6 +43,7 @@ shape = SubResource( 3 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "RunningRight"
+frame = 1
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
