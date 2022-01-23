@@ -10,4 +10,3 @@ func collected():
 	emit_signal("dot_collected")
 	Global.dot_collected = true
 	queue_free()
-	print(Global.dots)
