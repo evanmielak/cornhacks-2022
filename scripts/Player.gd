@@ -9,7 +9,7 @@ export (float, 0, 1.0) var acceleration = 0.25
 var velocity = Vector2.ZERO
 var dir
 var wall_direction = 1
-var jump_remaining
+var jump_remaining = true
 var wall_jump = 150
 var jump_wall = 60
 onready var _animated_sprite = $Sprite
@@ -42,18 +42,18 @@ func _physics_process(delta):
 	get_input()
 	velocity.y += gravity * delta
 	velocity = move_and_slide(velocity, Vector2.UP)
-	if is_on_floor() or nextToWall():
-		jump_remaining = 2
-		if Input.is_action_just_pressed("jump") and jump_remaining > 0:
+	if is_on_floor():
+		jump_remaining = true
+		if Input.is_action_just_pressed("jump"):
 			velocity.y = jump_speed
-			jump_remaining -= 1
-			print(jump_remaining)
-			if not is_on_floor() and nextToRightWall():
-				velocity.x = wall_jump
-				velocity.y = jump_wall
-			if not is_on_floor() and nextToLeftWall():
-				velocity.x = wall_jump
-				velocity.y = jump_wall
+			jump_remaining = false
+#			print(jump_remaining)
+#			if not is_on_floor() and nextToRightWall():
+#				velocity.x = wall_jump
+#				velocity.y = jump_wall
+#			if not is_on_floor() and nextToLeftWall():
+#				velocity.x = wall_jump
+#				velocity.y = jump_wall
 	if velocity.y != 0:
 		_animated_sprite.play("Jump")
 
