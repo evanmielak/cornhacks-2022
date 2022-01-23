@@ -103,6 +103,7 @@ tile_data = PoolIntArray( -2359297, 2, 0, -2424832, 2, 0, -2424814, 2, 0, -24248
 position = Vector2( 30, 563 )
 
 [node name="Timer" parent="Player" instance=ExtResource( 4 )]
+visible = false
 position = Vector2( -192, -100 )
 scale = Vector2( 0.2, 0.2 )
 

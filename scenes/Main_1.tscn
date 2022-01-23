@@ -123,6 +123,7 @@ light_mask = 2
 position = Vector2( -325, 8 )
 
 [node name="Timer" parent="Player" instance=ExtResource( 7 )]
+visible = false
 position = Vector2( -160, -90 )
 scale = Vector2( 0.2, 0.2 )
 

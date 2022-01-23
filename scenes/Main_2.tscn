@@ -450,10 +450,7 @@ script = ExtResource( 24 )
 position = Vector2( 184, 536 )
 
 [node name="Timer" parent="Player2" instance=ExtResource( 18 )]
-position = Vector2( -184, -101 )
-scale = Vector2( 0.2, 0.2 )
-
-[node name="Timer" parent="Player2" instance=ExtResource( 18 )]
+visible = false
 position = Vector2( -184, -101 )
 scale = Vector2( 0.2, 0.2 )
 
