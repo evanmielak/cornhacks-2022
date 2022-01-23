@@ -113,7 +113,8 @@ script = ExtResource( 4 )
 [node name="Player" parent="." instance=ExtResource( 3 )]
 
 [node name="Timer" parent="Player" instance=ExtResource( 7 )]
-position = Vector2( -192, -99 )
+position = Vector2( -192, -103 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2( 0, 1 )
