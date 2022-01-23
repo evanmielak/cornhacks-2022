@@ -14,6 +14,12 @@ config/name="platformer"
 run/main_scene="res://scenes/Main_1.tscn"
 config/icon="res://art/icon.png"
 
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/size/resizable=false
+
 [input]
 
 move_left={
