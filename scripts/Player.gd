@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
-export (int) var speed = 600
-export (int) var jump_speed = -500
+export (int) var speed = 100
+export (int) var jump_speed = -300
 export (int) var gravity = 1000
 export (float, 0, 1.0) var friction = 0.2
 export (float, 0, 1.0) var acceleration = 0.25
@@ -44,7 +44,7 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("jump"):
 			if jump_remaining:
 				velocity.y = jump_speed
-				jump_remaining = false
+				jump_remaining = true
 	if velocity.y != 0:
 		_animated_sprite.play("Jump")
 				

@@ -6,7 +6,6 @@ var velocity = Vector2()
 func _ready():
 	_animated_sprite.play("idle")
 	$CollisionShape2d.disabled = false
-	
 
 
 func _on_KillsPlayer_body_entered(body):
