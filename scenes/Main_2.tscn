@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://art/PM/PMRightCornerBorder.png" type="Texture" id=2]
@@ -24,6 +24,10 @@
 [ext_resource path="res://scenes/Dot.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/DotsRemaining.gd" type="Script" id=23]
 [ext_resource path="res://scenes/Main_2.gd" type="Script" id=24]
+[ext_resource path="res://scenes/Ginky.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/Prinky.tscn" type="PackedScene" id=26]
+[ext_resource path="res://scenes/Qrinky.tscn" type="PackedScene" id=27]
+[ext_resource path="res://scenes/Kinky.tscn" type="PackedScene" id=28]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -443,7 +447,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 script = ExtResource( 24 )
 
 [node name="Player2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 200, 440 )
+position = Vector2( 184, 536 )
 
 [node name="Timer" parent="Player2" instance=ExtResource( 18 )]
 position = Vector2( -184, -101 )
@@ -458,10 +462,9 @@ tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
-tile_data = PoolIntArray( 1179658, 7, 0, 1179659, 2, 0, 1179660, 2, 0, 1179661, 2, 0, 1179662, 2, 0, 1179663, 2, 0, 1179664, 2, 0, 1179665, 2, 0, 1179666, 2, 0, 1179667, 2, 0, 1179668, 2, 0, 1179669, 2, 0, 1179670, 2, 0, 1179671, 2, 0, 1179672, 2, 0, 1179673, 2, 0, 1179674, 2, 0, 1179675, 2, 0, 1179676, 2, 0, 1179677, 2, 0, 1179678, 2, 0, 1179679, 2, 0, 1179680, 2, 0, 1179681, 2, 0, 1179682, 2, 0, 1179683, 2, 0, 1179684, 2, 0, 1179685, 2, 0, 1179686, 2, 0, 1179687, 3, 0, 1179688, 2, 0, 1179689, 2, 0, 1179690, 2, 0, 1179691, 2, 0, 1179692, 0, 0, 1245194, 11, 0, 1245223, 8, 0, 1245228, 11, 0, 1310730, 11, 0, 1310764, 11, 0, 1376266, 14, 0, 1376267, 9, 0, 1376270, 1, 0, 1376271, 2, 0, 1376272, 2, 0, 1376273, 2, 0, 1376274, 2, 0, 1376275, 3, 0, 1376276, 9, 0, 1376280, 1, 0, 1376281, 2, 0, 1376282, 9, 0, 1376286, 1, 0, 1376287, 2, 0, 1376288, 9, 0, 1376300, 11, 0, 1441802, 11, 0, 1441811, 11, 0, 1441834, 1, 0, 1441835, 2, 0, 1441836, 13, 0, 1507338, 11, 0, 1507347, 11, 0, 1507372, 11, 0, 1572874, 11, 0, 1572883, 14, 0, 1572884, 9, 0, 1572888, 7, 0, 1572889, 2, 0, 1572890, 9, 0, 1572891, 15, 0, 1572892, 15, 0, 1572893, 15, 0, 1572894, 1, 0, 1572895, 2, 0, 1572896, 3, 0, 1572897, 2, 0, 1572898, 2, 0, 1572899, 2, 0, 1572900, 0, 0, 1572908, 11, 0, 1638410, 14, 0, 1638411, 9, 0, 1638414, 1, 0, 1638415, 9, 0, 1638418, 1, 0, 1638419, 13, 0, 1638424, 11, 0, 1638432, 11, 0, 1638436, 11, 0, 1638439, 1, 0, 1638440, 2, 0, 1638441, 9, 0, 1638444, 11, 0, 1703946, 11, 0, 1703955, 11, 0, 1703960, 11, 0, 1703968, 11, 0, 1703972, 11, 0, 1703980, 11, 0, 1769482, 11, 0, 1769491, 11, 0, 1769496, 11, 0, 1769504, 11, 0, 1769508, 11, 0, 1769516, 11, 0, 1835018, 14, 0, 1835019, 2, 0, 1835020, 9, 0, 1835025, 1, 0, 1835026, 2, 0, 1835027, 13, 0, 1835031, 1, 0, 1835032, 12, 0, 1835033, 2, 0, 1835034, 2, 0, 1835035, 2, 0, 1835036, 2, 0, 1835037, 2, 0, 1835038, 2, 0, 1835039, 2, 0, 1835040, 6, 0, 1835043, 1, 0, 1835044, 4, 0, 1835045, 9, 0, 1835052, 11, 0, 1900554, 11, 0, 1900563, 11, 0, 1900580, 8, 0, 1900588, 11, 0, 1966090, 11, 0, 1966099, 11, 0, 1966124, 11, 0, 2031626, 14, 0, 2031627, 2, 0, 2031628, 2, 0, 2031629, 2, 0, 2031630, 2, 0, 2031631, 2, 0, 2031632, 9, 0, 2031635, 14, 0, 2031636, 9, 0, 2031640, 10, 0, 2031644, 1, 0, 2031645, 2, 0, 2031646, 2, 0, 2031647, 2, 0, 2031648, 2, 0, 2031649, 9, 0, 2031656, 1, 0, 2031657, 2, 0, 2031658, 2, 0, 2031659, 2, 0, 2031660, 13, 0, 2097162, 11, 0, 2097171, 11, 0, 2097176, 11, 0, 2097196, 11, 0, 2162698, 11, 0, 2162707, 11, 0, 2162712, 11, 0, 2162732, 11, 0, 2228234, 5, 0, 2228235, 2, 0, 2228236, 2, 0, 2228237, 2, 0, 2228238, 2, 0, 2228239, 2, 0, 2228240, 2, 0, 2228241, 2, 0, 2228242, 2, 0, 2228243, 12, 0, 2228244, 2, 0, 2228245, 2, 0, 2228246, 2, 0, 2228247, 2, 0, 2228248, 12, 0, 2228249, 2, 0, 2228250, 2, 0, 2228251, 2, 0, 2228252, 2, 0, 2228253, 2, 0, 2228254, 2, 0, 2228255, 2, 0, 2228256, 2, 0, 2228257, 2, 0, 2228258, 2, 0, 2228259, 2, 0, 2228260, 2, 0, 2228261, 2, 0, 2228262, 2, 0, 2228263, 2, 0, 2228264, 2, 0, 2228265, 2, 0, 2228266, 2, 0, 2228267, 2, 0, 2228268, 6, 0 )
+tile_data = PoolIntArray( 1179658, 7, 0, 1179659, 2, 0, 1179660, 2, 0, 1179661, 2, 0, 1179662, 2, 0, 1179663, 2, 0, 1179664, 2, 0, 1179665, 2, 0, 1179666, 2, 0, 1179667, 2, 0, 1179668, 2, 0, 1179669, 2, 0, 1179670, 2, 0, 1179671, 2, 0, 1179672, 2, 0, 1179673, 2, 0, 1179674, 2, 0, 1179675, 2, 0, 1179676, 2, 0, 1179677, 2, 0, 1179678, 2, 0, 1179679, 2, 0, 1179680, 2, 0, 1179681, 2, 0, 1179682, 2, 0, 1179683, 2, 0, 1179684, 2, 0, 1179685, 2, 0, 1179686, 2, 0, 1179687, 3, 0, 1179688, 2, 0, 1179689, 2, 0, 1179690, 2, 0, 1179691, 2, 0, 1179692, 0, 0, 1245194, 11, 0, 1245223, 8, 0, 1245228, 11, 0, 1310730, 11, 0, 1310764, 11, 0, 1376266, 14, 0, 1376267, 9, 0, 1376270, 1, 0, 1376271, 2, 0, 1376272, 2, 0, 1376273, 2, 0, 1376274, 2, 0, 1376275, 3, 0, 1376276, 9, 0, 1376280, 1, 0, 1376281, 2, 0, 1376282, 9, 0, 1376286, 1, 0, 1376287, 2, 0, 1376288, 0, 0, 1376300, 11, 0, 1441802, 11, 0, 1441811, 11, 0, 1441824, 11, 0, 1441834, 1, 0, 1441835, 2, 0, 1441836, 13, 0, 1507338, 11, 0, 1507347, 11, 0, 1507360, 11, 0, 1507372, 11, 0, 1572874, 11, 0, 1572883, 14, 0, 1572884, 9, 0, 1572888, 7, 0, 1572889, 2, 0, 1572890, 9, 0, 1572891, 15, 0, 1572892, 15, 0, 1572893, 15, 0, 1572894, 1, 0, 1572895, 2, 0, 1572896, 4, 0, 1572897, 2, 0, 1572898, 2, 0, 1572899, 2, 0, 1572900, 0, 0, 1572908, 11, 0, 1638410, 14, 0, 1638411, 9, 0, 1638414, 1, 0, 1638415, 9, 0, 1638418, 1, 0, 1638419, 13, 0, 1638424, 11, 0, 1638432, 11, 0, 1638436, 11, 0, 1638439, 1, 0, 1638440, 2, 0, 1638441, 9, 0, 1638444, 11, 0, 1703946, 11, 0, 1703955, 11, 0, 1703960, 11, 0, 1703968, 11, 0, 1703972, 11, 0, 1703980, 11, 0, 1769482, 11, 0, 1769491, 11, 0, 1769496, 11, 0, 1769504, 11, 0, 1769508, 11, 0, 1769516, 11, 0, 1835018, 14, 0, 1835019, 2, 0, 1835020, 9, 0, 1835025, 1, 0, 1835026, 2, 0, 1835027, 13, 0, 1835031, 1, 0, 1835032, 12, 0, 1835033, 2, 0, 1835034, 2, 0, 1835035, 2, 0, 1835036, 2, 0, 1835037, 2, 0, 1835038, 2, 0, 1835039, 2, 0, 1835040, 6, 0, 1835043, 1, 0, 1835044, 4, 0, 1835045, 9, 0, 1835052, 11, 0, 1900554, 11, 0, 1900563, 11, 0, 1900580, 11, 0, 1900588, 11, 0, 1966090, 11, 0, 1966099, 11, 0, 1966116, 8, 0, 1966124, 11, 0, 2031626, 14, 0, 2031627, 2, 0, 2031628, 2, 0, 2031629, 2, 0, 2031630, 2, 0, 2031631, 2, 0, 2031632, 9, 0, 2031635, 14, 0, 2031636, 9, 0, 2031640, 10, 0, 2031644, 1, 0, 2031645, 2, 0, 2031646, 2, 0, 2031647, 2, 0, 2031648, 2, 0, 2031649, 9, 0, 2031656, 1, 0, 2031657, 2, 0, 2031658, 2, 0, 2031659, 2, 0, 2031660, 13, 0, 2097162, 11, 0, 2097171, 11, 0, 2097176, 11, 0, 2097196, 11, 0, 2162698, 11, 0, 2162707, 11, 0, 2162712, 11, 0, 2162732, 11, 0, 2228234, 5, 0, 2228235, 2, 0, 2228236, 2, 0, 2228237, 2, 0, 2228238, 2, 0, 2228239, 2, 0, 2228240, 2, 0, 2228241, 2, 0, 2228242, 2, 0, 2228243, 12, 0, 2228244, 2, 0, 2228245, 2, 0, 2228246, 2, 0, 2228247, 2, 0, 2228248, 12, 0, 2228249, 2, 0, 2228250, 2, 0, 2228251, 2, 0, 2228252, 2, 0, 2228253, 2, 0, 2228254, 2, 0, 2228255, 2, 0, 2228256, 2, 0, 2228257, 2, 0, 2228258, 2, 0, 2228259, 2, 0, 2228260, 2, 0, 2228261, 2, 0, 2228262, 2, 0, 2228263, 2, 0, 2228264, 2, 0, 2228265, 2, 0, 2228266, 2, 0, 2228267, 2, 0, 2228268, 6, 0 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-visible = false
 show_behind_parent = true
 margin_left = -40.0
 margin_top = 32.0
@@ -487,4 +490,572 @@ __meta__ = {
 [node name="Dot1" parent="." instance=ExtResource( 22 )]
 position = Vector2( 184, 440 )
 
+[node name="Dot2" parent="." instance=ExtResource( 22 )]
+position = Vector2( 200, 488 )
+
+[node name="Dot3" parent="." instance=ExtResource( 22 )]
+position = Vector2( 216, 488 )
+
+[node name="Dot4" parent="." instance=ExtResource( 22 )]
+position = Vector2( 232, 488 )
+
+[node name="Dot5" parent="." instance=ExtResource( 22 )]
+position = Vector2( 184, 488 )
+
+[node name="Dot6" parent="." instance=ExtResource( 22 )]
+position = Vector2( 248, 488 )
+
+[node name="Dot7" parent="." instance=ExtResource( 22 )]
+position = Vector2( 264, 488 )
+
+[node name="Dot17" parent="." instance=ExtResource( 22 )]
+position = Vector2( 280, 488 )
+
+[node name="Dot18" parent="." instance=ExtResource( 22 )]
+position = Vector2( 216, 472 )
+
+[node name="Dot19" parent="." instance=ExtResource( 22 )]
+position = Vector2( 216, 456 )
+
+[node name="Dot20" parent="." instance=ExtResource( 22 )]
+position = Vector2( 216, 440 )
+
+[node name="Dot21" parent="." instance=ExtResource( 22 )]
+position = Vector2( 200, 440 )
+
+[node name="Dot22" parent="." instance=ExtResource( 22 )]
+position = Vector2( 296, 440 )
+
+[node name="Dot23" parent="." instance=ExtResource( 22 )]
+position = Vector2( 280, 440 )
+
+[node name="Dot24" parent="." instance=ExtResource( 22 )]
+position = Vector2( 232, 392 )
+
+[node name="Dot25" parent="." instance=ExtResource( 22 )]
+position = Vector2( 248, 392 )
+
+[node name="Dot26" parent="." instance=ExtResource( 22 )]
+position = Vector2( 296, 392 )
+
+[node name="Dot33" parent="." instance=ExtResource( 22 )]
+position = Vector2( 296, 376 )
+
+[node name="Dot34" parent="." instance=ExtResource( 22 )]
+position = Vector2( 296, 360 )
+
+[node name="Dot27" parent="." instance=ExtResource( 22 )]
+position = Vector2( 184, 392 )
+
+[node name="Dot31" parent="." instance=ExtResource( 22 )]
+position = Vector2( 184, 376 )
+
+[node name="Dot32" parent="." instance=ExtResource( 22 )]
+position = Vector2( 184, 360 )
+
+[node name="Dot35" parent="." instance=ExtResource( 22 )]
+position = Vector2( 200, 344 )
+
+[node name="Dot36" parent="." instance=ExtResource( 22 )]
+position = Vector2( 200, 328 )
+
+[node name="Dot37" parent="." instance=ExtResource( 22 )]
+position = Vector2( 184, 328 )
+
+[node name="Dot38" parent="." instance=ExtResource( 22 )]
+position = Vector2( 232, 328 )
+
+[node name="Dot39" parent="." instance=ExtResource( 22 )]
+position = Vector2( 248, 328 )
+
+[node name="Dot40" parent="." instance=ExtResource( 22 )]
+position = Vector2( 264, 328 )
+
+[node name="Dot41" parent="." instance=ExtResource( 22 )]
+position = Vector2( 280, 328 )
+
+[node name="Dot42" parent="." instance=ExtResource( 22 )]
+position = Vector2( 296, 328 )
+
+[node name="Dot43" parent="." instance=ExtResource( 22 )]
+position = Vector2( 312, 328 )
+
+[node name="Dot44" parent="." instance=ExtResource( 22 )]
+position = Vector2( 328, 328 )
+
+[node name="Dot45" parent="." instance=ExtResource( 22 )]
+position = Vector2( 328, 360 )
+
+[node name="Dot46" parent="." instance=ExtResource( 22 )]
+position = Vector2( 328, 376 )
+
+[node name="Dot47" parent="." instance=ExtResource( 22 )]
+position = Vector2( 392, 328 )
+
+[node name="Dot48" parent="." instance=ExtResource( 22 )]
+position = Vector2( 408, 328 )
+
+[node name="Dot49" parent="." instance=ExtResource( 22 )]
+position = Vector2( 424, 328 )
+
+[node name="Dot50" parent="." instance=ExtResource( 22 )]
+position = Vector2( 488, 328 )
+
+[node name="Dot51" parent="." instance=ExtResource( 22 )]
+position = Vector2( 504, 328 )
+
+[node name="Dot52" parent="." instance=ExtResource( 22 )]
+position = Vector2( 520, 328 )
+
+[node name="Dot53" parent="." instance=ExtResource( 22 )]
+position = Vector2( 376, 440 )
+
+[node name="Dot54" parent="." instance=ExtResource( 22 )]
+position = Vector2( 376, 424 )
+
+[node name="Dot55" parent="." instance=ExtResource( 22 )]
+position = Vector2( 376, 408 )
+
+[node name="Dot56" parent="." instance=ExtResource( 22 )]
+position = Vector2( 376, 392 )
+
+[node name="Dot57" parent="." instance=ExtResource( 22 )]
+position = Vector2( 376, 376 )
+
+[node name="Dot58" parent="." instance=ExtResource( 22 )]
+position = Vector2( 392, 376 )
+
+[node name="Dot59" parent="." instance=ExtResource( 22 )]
+position = Vector2( 408, 376 )
+
+[node name="Dot60" parent="." instance=ExtResource( 22 )]
+position = Vector2( 424, 376 )
+
+[node name="Dot61" parent="." instance=ExtResource( 22 )]
+position = Vector2( 488, 376 )
+
+[node name="Dot62" parent="." instance=ExtResource( 22 )]
+position = Vector2( 504, 376 )
+
+[node name="Dot64" parent="." instance=ExtResource( 22 )]
+position = Vector2( 536, 376 )
+
+[node name="Dot65" parent="." instance=ExtResource( 22 )]
+position = Vector2( 552, 376 )
+
+[node name="Dot66" parent="." instance=ExtResource( 22 )]
+position = Vector2( 568, 376 )
+
+[node name="Dot67" parent="." instance=ExtResource( 22 )]
+position = Vector2( 584, 376 )
+
+[node name="Dot68" parent="." instance=ExtResource( 22 )]
+position = Vector2( 600, 376 )
+
+[node name="Dot69" parent="." instance=ExtResource( 22 )]
+position = Vector2( 600, 392 )
+
+[node name="Dot70" parent="." instance=ExtResource( 22 )]
+position = Vector2( 600, 408 )
+
+[node name="Dot71" parent="." instance=ExtResource( 22 )]
+position = Vector2( 600, 424 )
+
+[node name="Dot72" parent="." instance=ExtResource( 22 )]
+position = Vector2( 600, 440 )
+
+[node name="Dot85" parent="." instance=ExtResource( 22 )]
+position = Vector2( 696, 488 )
+
+[node name="Dot86" parent="." instance=ExtResource( 22 )]
+position = Vector2( 680, 488 )
+
+[node name="Dot87" parent="." instance=ExtResource( 22 )]
+position = Vector2( 664, 488 )
+
+[node name="Dot88" parent="." instance=ExtResource( 22 )]
+position = Vector2( 648, 488 )
+
+[node name="Dot89" parent="." instance=ExtResource( 22 )]
+position = Vector2( 632, 488 )
+
+[node name="Dot90" parent="." instance=ExtResource( 22 )]
+position = Vector2( 632, 504 )
+
+[node name="Dot91" parent="." instance=ExtResource( 22 )]
+position = Vector2( 632, 520 )
+
+[node name="Dot92" parent="." instance=ExtResource( 22 )]
+position = Vector2( 632, 536 )
+
+[node name="Dot97" parent="." instance=ExtResource( 22 )]
+position = Vector2( 616, 536 )
+
+[node name="Dot98" parent="." instance=ExtResource( 22 )]
+position = Vector2( 600, 536 )
+
+[node name="Dot99" parent="." instance=ExtResource( 22 )]
+position = Vector2( 584, 536 )
+
+[node name="Dot100" parent="." instance=ExtResource( 22 )]
+position = Vector2( 568, 536 )
+
+[node name="Dot101" parent="." instance=ExtResource( 22 )]
+position = Vector2( 552, 536 )
+
+[node name="Dot102" parent="." instance=ExtResource( 22 )]
+position = Vector2( 536, 536 )
+
+[node name="Dot103" parent="." instance=ExtResource( 22 )]
+position = Vector2( 520, 536 )
+
+[node name="Dot104" parent="." instance=ExtResource( 22 )]
+position = Vector2( 504, 536 )
+
+[node name="Dot105" parent="." instance=ExtResource( 22 )]
+position = Vector2( 488, 536 )
+
+[node name="Dot106" parent="." instance=ExtResource( 22 )]
+position = Vector2( 472, 536 )
+
+[node name="Dot107" parent="." instance=ExtResource( 22 )]
+position = Vector2( 456, 536 )
+
+[node name="Dot108" parent="." instance=ExtResource( 22 )]
+position = Vector2( 440, 536 )
+
+[node name="Dot109" parent="." instance=ExtResource( 22 )]
+position = Vector2( 424, 536 )
+
+[node name="Dot110" parent="." instance=ExtResource( 22 )]
+position = Vector2( 408, 536 )
+
+[node name="Dot111" parent="." instance=ExtResource( 22 )]
+position = Vector2( 408, 520 )
+
+[node name="Dot112" parent="." instance=ExtResource( 22 )]
+position = Vector2( 408, 504 )
+
+[node name="Dot113" parent="." instance=ExtResource( 22 )]
+position = Vector2( 408, 488 )
+
+[node name="Dot114" parent="." instance=ExtResource( 22 )]
+position = Vector2( 392, 488 )
+
+[node name="Dot115" parent="." instance=ExtResource( 22 )]
+position = Vector2( 376, 488 )
+
+[node name="Dot116" parent="." instance=ExtResource( 22 )]
+position = Vector2( 376, 504 )
+
+[node name="Dot117" parent="." instance=ExtResource( 22 )]
+position = Vector2( 376, 520 )
+
+[node name="Dot118" parent="." instance=ExtResource( 22 )]
+position = Vector2( 376, 536 )
+
+[node name="Dot119" parent="." instance=ExtResource( 22 )]
+position = Vector2( 360, 536 )
+
+[node name="Dot120" parent="." instance=ExtResource( 22 )]
+position = Vector2( 344, 536 )
+
+[node name="Dot121" parent="." instance=ExtResource( 22 )]
+position = Vector2( 328, 536 )
+
+[node name="Dot122" parent="." instance=ExtResource( 22 )]
+position = Vector2( 328, 520 )
+
+[node name="Dot123" parent="." instance=ExtResource( 22 )]
+position = Vector2( 328, 520 )
+
+[node name="Dot124" parent="." instance=ExtResource( 22 )]
+position = Vector2( 344, 520 )
+
+[node name="Dot125" parent="." instance=ExtResource( 22 )]
+position = Vector2( 344, 504 )
+
+[node name="Dot126" parent="." instance=ExtResource( 22 )]
+position = Vector2( 344, 488 )
+
+[node name="Dot127" parent="." instance=ExtResource( 22 )]
+position = Vector2( 360, 520 )
+
+[node name="Dot129" parent="." instance=ExtResource( 22 )]
+position = Vector2( 456, 488 )
+
+[node name="Dot130" parent="." instance=ExtResource( 22 )]
+position = Vector2( 472, 488 )
+
+[node name="Dot131" parent="." instance=ExtResource( 22 )]
+position = Vector2( 488, 488 )
+
+[node name="Dot132" parent="." instance=ExtResource( 22 )]
+position = Vector2( 504, 488 )
+
+[node name="Dot133" parent="." instance=ExtResource( 22 )]
+position = Vector2( 520, 488 )
+
+[node name="Dot134" parent="." instance=ExtResource( 22 )]
+position = Vector2( 536, 488 )
+
+[node name="Dot135" parent="." instance=ExtResource( 22 )]
+position = Vector2( 536, 456 )
+
+[node name="Dot137" parent="." instance=ExtResource( 22 )]
+position = Vector2( 552, 456 )
+
+[node name="Dot138" parent="." instance=ExtResource( 22 )]
+position = Vector2( 568, 440 )
+
+[node name="Dot139" parent="." instance=ExtResource( 22 )]
+position = Vector2( 552, 440 )
+
+[node name="Dot140" parent="." instance=ExtResource( 22 )]
+position = Vector2( 568, 424 )
+
+[node name="Dot141" parent="." instance=ExtResource( 22 )]
+position = Vector2( 568, 408 )
+
+[node name="Dot136" parent="." instance=ExtResource( 22 )]
+position = Vector2( 536, 472 )
+
+[node name="Dot128" parent="." instance=ExtResource( 22 )]
+position = Vector2( 328, 488 )
+
+[node name="Dot93" parent="." instance=ExtResource( 22 )]
+position = Vector2( 648, 536 )
+
+[node name="Dot94" parent="." instance=ExtResource( 22 )]
+position = Vector2( 664, 536 )
+
+[node name="Dot95" parent="." instance=ExtResource( 22 )]
+position = Vector2( 680, 536 )
+
+[node name="Dot96" parent="." instance=ExtResource( 22 )]
+position = Vector2( 696, 536 )
+
+[node name="Dot73" parent="." instance=ExtResource( 22 )]
+position = Vector2( 632, 392 )
+
+[node name="Dot74" parent="." instance=ExtResource( 22 )]
+position = Vector2( 648, 392 )
+
+[node name="Dot75" parent="." instance=ExtResource( 22 )]
+position = Vector2( 664, 392 )
+
+[node name="Dot76" parent="." instance=ExtResource( 22 )]
+position = Vector2( 664, 376 )
+
+[node name="Dot77" parent="." instance=ExtResource( 22 )]
+position = Vector2( 664, 360 )
+
+[node name="Dot78" parent="." instance=ExtResource( 22 )]
+position = Vector2( 664, 344 )
+
+[node name="Dot79" parent="." instance=ExtResource( 22 )]
+position = Vector2( 680, 344 )
+
+[node name="Dot80" parent="." instance=ExtResource( 22 )]
+position = Vector2( 696, 344 )
+
+[node name="Dot81" parent="." instance=ExtResource( 22 )]
+position = Vector2( 680, 328 )
+
+[node name="Dot82" parent="." instance=ExtResource( 22 )]
+position = Vector2( 680, 312 )
+
+[node name="Dot83" parent="." instance=ExtResource( 22 )]
+position = Vector2( 696, 312 )
+
+[node name="Dot84" parent="." instance=ExtResource( 22 )]
+position = Vector2( 696, 328 )
+
+[node name="Dot28" parent="." instance=ExtResource( 22 )]
+position = Vector2( 200, 392 )
+
+[node name="Dot29" parent="." instance=ExtResource( 22 )]
+position = Vector2( 200, 408 )
+
+[node name="Dot30" parent="." instance=ExtResource( 22 )]
+position = Vector2( 200, 424 )
+
+[node name="Dot8" parent="." instance=ExtResource( 22 )]
+position = Vector2( 280, 504 )
+
+[node name="Dot9" parent="." instance=ExtResource( 22 )]
+position = Vector2( 280, 520 )
+
+[node name="Dot10" parent="." instance=ExtResource( 22 )]
+position = Vector2( 280, 536 )
+
+[node name="Dot11" parent="." instance=ExtResource( 22 )]
+position = Vector2( 296, 536 )
+
+[node name="Dot12" parent="." instance=ExtResource( 22 )]
+position = Vector2( 264, 536 )
+
+[node name="Dot13" parent="." instance=ExtResource( 22 )]
+position = Vector2( 248, 536 )
+
+[node name="Dot14" parent="." instance=ExtResource( 22 )]
+position = Vector2( 232, 536 )
+
+[node name="Dot15" parent="." instance=ExtResource( 22 )]
+position = Vector2( 216, 536 )
+
+[node name="Dot16" parent="." instance=ExtResource( 22 )]
+position = Vector2( 200, 536 )
+
+[node name="Ginky2" parent="." instance=ExtResource( 26 )]
+position = Vector2( 344, 368 )
+
+[node name="Ginky4" parent="." instance=ExtResource( 28 )]
+position = Vector2( 416, 528 )
+
+[node name="Ginky3" parent="." instance=ExtResource( 27 )]
+position = Vector2( 608, 480 )
+
+[node name="Ginky" parent="." instance=ExtResource( 25 )]
+position = Vector2( 296, 432 )
+
 [connection signal="dot_collected" from="Dot1" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot2" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot3" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot4" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot5" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot6" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot7" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot17" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot18" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot19" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot20" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot21" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot22" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot23" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot24" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot25" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot26" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot33" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot34" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot27" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot31" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot32" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot35" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot36" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot37" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot38" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot39" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot40" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot41" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot42" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot43" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot44" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot45" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot46" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot47" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot48" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot49" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot50" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot51" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot52" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot53" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot54" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot55" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot56" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot57" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot58" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot59" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot60" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot61" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot62" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot64" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot65" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot66" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot67" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot68" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot69" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot70" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot71" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot72" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot85" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot86" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot87" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot88" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot89" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot90" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot91" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot92" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot97" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot98" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot99" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot100" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot101" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot102" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot103" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot104" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot105" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot106" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot107" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot108" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot109" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot110" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot111" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot112" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot113" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot114" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot115" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot116" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot117" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot118" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot119" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot120" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot121" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot122" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot123" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot124" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot125" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot126" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot127" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot129" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot130" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot131" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot132" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot133" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot134" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot135" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot137" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot138" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot139" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot140" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot141" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot136" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot128" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot93" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot94" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot95" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot96" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot73" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot74" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot75" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot76" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot77" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot78" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot79" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot80" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot81" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot82" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot83" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot84" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot28" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot29" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot30" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot8" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot9" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot10" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot11" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot12" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot13" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot14" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot15" to="." method="_on_Dot1_dot_collected"]
+[connection signal="dot_collected" from="Dot16" to="." method="_on_Dot1_dot_collected"]
