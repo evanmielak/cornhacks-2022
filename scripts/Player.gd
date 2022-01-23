@@ -53,3 +53,8 @@ func _physics_process(delta):
 func _on_LevelTransition_body_entered(body):
 	if body.is_in_group("player"):
 		get_tree().change_scene("res://scenes/Main_2.tscn")
+
+
+func _on_Area2D_body_entered(body):
+	if body.is_in_group("Player"):
+		get_tree().change_scene("res://scenes/Main_4.tscn")

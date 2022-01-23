@@ -7,4 +7,4 @@ func _on_Dot1_dot_collected():
 	var DotsRemaining = "Dots: " +String(dots)
 	Global.dots-=1
 	if dots == 0:
-		get_tree().change_scene("res://scenes/Main_4.tscn")
+		get_tree().change_scene("res://scenes/Main_3.tscn")
