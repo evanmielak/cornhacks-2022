@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://art/DK/SwankeyKongLeftFoot.png" type="Texture" id=1]
 [ext_resource path="res://art/DK/SwankeyKongRightFoot.png" type="Texture" id=2]
 [ext_resource path="res://art/DK/SwankeyKong.png" type="Texture" id=3]
 [ext_resource path="res://art/DK/SwankeyKong2.png" type="Texture" id=4]
 [ext_resource path="res://art/DK/SwankeyKong3.png" type="Texture" id=5]
+[ext_resource path="res://Monkey Kong.gd" type="Script" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -19,10 +20,41 @@ animations = [ {
 "speed": 3.0
 } ]
 
-[node name="Monkey Kong" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id=4]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 8, 1.75 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 0.5, 28.75 )
+
+[node name="Monkey Kong" type="KinematicBody2D"]
+script = ExtResource( 6 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "idle"
-frame = 5
+frame = 1
 playing = true
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="."]
+shape = SubResource( 4 )
+
+[node name="DeathBox" type="Area2D" parent="."]
+
+[node name="Killbox" type="CollisionShape2D" parent="DeathBox"]
+position = Vector2( 1, -30.75 )
+shape = SubResource( 2 )
+
+[node name="KillsPlayer" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillsPlayer"]
+position = Vector2( 31, 3 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KillsPlayer"]
+position = Vector2( -29, 2 )
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="DeathBox" to="." method="_on_DeathBox_body_entered"]
+[connection signal="body_entered" from="KillsPlayer" to="." method="_on_KillsPlayer_body_entered"]
