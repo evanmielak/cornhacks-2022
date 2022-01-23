@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://art/DK/SwankeyKongLeftFoot.png" type="Texture" id=1]
+[ext_resource path="res://art/DK/SwankeyKongRightFoot.png" type="Texture" id=2]
+[ext_resource path="res://art/DK/SwankeyKong.png" type="Texture" id=3]
+[ext_resource path="res://art/DK/SwankeyKong2.png" type="Texture" id=4]
+[ext_resource path="res://art/DK/SwankeyKong3.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Death",
+"speed": 3.0
+} ]
+
+[node name="Monkey Kong" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "idle"
+frame = 5
+playing = true
