@@ -1,8 +1,10 @@
 extends Node2D
 
-var dots = 140
-
+export onready var dots = 140
+	
 func _on_Dot1_dot_collected():
 	dots = dots - 1
 	var DotsRemaining = "Dots: " +String(dots)
 	Global.dots-=1
+	if dots == 0:
+		get_tree().change_scene("res://scenes/Main_4.tscn")
