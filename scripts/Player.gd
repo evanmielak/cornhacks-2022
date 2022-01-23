@@ -8,14 +8,8 @@ export (float, 0, 1.0) var acceleration = 0.25
 
 var velocity = Vector2.ZERO
 var dir
-var wall_direction = 1
 var jump_remaining = true
-var wall_jump = 150
-var jump_wall = 60
 onready var _animated_sprite = $Sprite
-#onready var left_wall_raycasts = $WallRaycasts/LeftTopRaycast
-#onready var right_wall_raycasts = $WallRaycasts/RightTopRaycast
-
 
 
 
@@ -46,41 +40,11 @@ func _physics_process(delta):
 		jump_remaining = true
 		if Input.is_action_just_pressed("jump"):
 			velocity.y = jump_speed
-			jump_remaining = false
-#			print(jump_remaining)
-#			if not is_on_floor() and nextToRightWall():
-#				velocity.x = wall_jump
-#				velocity.y = jump_wall
-#			if not is_on_floor() and nextToLeftWall():
-#				velocity.x = wall_jump
-#				velocity.y = jump_wall
+	else:
+		if Input.is_action_just_pressed("jump"):
+			if jump_remaining:
+				velocity.y = jump_speed
+				jump_remaining = false
 	if velocity.y != 0:
 		_animated_sprite.play("Jump")
-
-func nextToWall():
-	return nextToRightWall() or nextToLeftWall()
-	
-func nextToRightWall():
-	print($RightWall.is_colliding())
-	return $RightWall.is_colliding()
-
-func nextToLeftWall():
-	print($LeftWall.is_colliding())
-	return $LeftWall.is_colliding()
-#func _update_wall_direction():
-#	var is_near_wall_left = _check_is_valid_wall(left_wall_raycasts)
-#	var is_near_wall_right = _check_is_valid_wall(right_wall_raycasts)
-#
-#	if is_near_wall_left && is_near_wall_right:
-#		wall_direction = dir
-#	else:
-#		wall_direction = -int(is_near_wall_left) + int(is_near_wall_right)
-#
-#
-#func _check_is_valid_wall(wall_raycasts):
-#	for raycast in wall_raycasts.get_children():
-#		print(raycast)
-#		if raycast.is_colliding():
-#			return true
-#	return false
 				
