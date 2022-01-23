@@ -14,10 +14,10 @@ config/name="platformer"
 run/main_scene="res://scenes/Main_1.tscn"
 config/icon="res://art/icon.png"
 
-[autoload]
+[display]
 
-Dot="*res://scenes/Dot.gd"
-Global="*res://scenes/Global.gd"
+window/size/width=1920
+window/size/height=1080
 
 [input]
 
