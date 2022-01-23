@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FlatGirder2.png-7a09565a1124f70dddc39e6b6aaba97f.stex"
+path="res://.import/QrinkyDown.png-c4b6ab2ce423ffe9409e631353628667.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/FlatGirder2.png"
-dest_files=[ "res://.import/FlatGirder2.png-7a09565a1124f70dddc39e6b6aaba97f.stex" ]
+source_file="res://art/PM/QrinkyDown.png"
+dest_files=[ "res://.import/QrinkyDown.png-c4b6ab2ce423ffe9409e631353628667.stex" ]
 
 [params]
 
