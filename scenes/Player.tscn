@@ -16,15 +16,15 @@ animations = [ {
 "name": "Jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
-"loop": true,
-"name": "RunningLeft",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 1 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 2.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "RunningLeft",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
 "loop": true,
@@ -42,6 +42,7 @@ shape = SubResource( 1 )
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "RunningRight"
+frame = 1
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -49,28 +50,12 @@ rotating = true
 current = true
 zoom = Vector2( 0.25, 0.25 )
 
-[node name="WallRaycasts" type="Node2D" parent="."]
-
-[node name="LeftWallCasts" type="Node2D" parent="WallRaycasts"]
-
-[node name="TopLeftRayCast" type="RayCast2D" parent="WallRaycasts/LeftWallCasts"]
-position = Vector2( 0, -5 )
+[node name="LeftWall" type="RayCast2D" parent="."]
 rotation = 1.5708
-scale = Vector2( 0.2, 0.2 )
+enabled = true
+cast_to = Vector2( 0, 5 )
 
-[node name="BottomLeftRayCast" type="RayCast2D" parent="WallRaycasts/LeftWallCasts"]
-position = Vector2( 0, 5 )
-rotation = 1.5708
-scale = Vector2( 0.2, 0.2 )
-
-[node name="RightWallCasts" type="Node2D" parent="WallRaycasts"]
-
-[node name="TopRightRayCast" type="RayCast2D" parent="WallRaycasts/RightWallCasts"]
-position = Vector2( 0, -5 )
+[node name="RightWall" type="RayCast2D" parent="."]
 rotation = -1.5708
-scale = Vector2( 0.2, 0.2 )
-
-[node name="BottomRightRayCast" type="RayCast2D" parent="WallRaycasts/RightWallCasts"]
-position = Vector2( 0, 5 )
-rotation = -1.5708
-scale = Vector2( 0.2, 0.2 )
+enabled = true
+cast_to = Vector2( 0, 5 )
