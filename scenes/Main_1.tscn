@@ -113,6 +113,7 @@ script = ExtResource( 4 )
 [node name="Player" parent="." instance=ExtResource( 3 )]
 
 [node name="Timer" parent="Player" instance=ExtResource( 7 )]
+visible = false
 position = Vector2( -192, -99 )
 
 [node name="TileMap" type="TileMap" parent="."]
