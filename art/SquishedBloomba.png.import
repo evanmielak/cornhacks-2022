@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FlatGirder1.png-4ff2e01f53993554de946a5ec715fe13.stex"
+path="res://.import/SquishedBloomba.png-6aec5485669dcbb4072106e5678540b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/FlatGirder1.png"
-dest_files=[ "res://.import/FlatGirder1.png-4ff2e01f53993554de946a5ec715fe13.stex" ]
+source_file="res://art/SquishedBloomba.png"
+dest_files=[ "res://.import/SquishedBloomba.png-6aec5485669dcbb4072106e5678540b2.stex" ]
 
 [params]
 

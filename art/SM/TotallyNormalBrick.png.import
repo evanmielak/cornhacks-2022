@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FlatGirder2.png-7a09565a1124f70dddc39e6b6aaba97f.stex"
+path="res://.import/TotallyNormalBrick.png-723cc573d5e95e39c144387dd34a07d8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/FlatGirder2.png"
-dest_files=[ "res://.import/FlatGirder2.png-7a09565a1124f70dddc39e6b6aaba97f.stex" ]
+source_file="res://art/SM/TotallyNormalBrick.png"
+dest_files=[ "res://.import/TotallyNormalBrick.png-723cc573d5e95e39c144387dd34a07d8.stex" ]
 
 [params]
 
