@@ -1,0 +1,124 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://art/Square.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://art/BlackBackground.png" type="Texture" id=2]
+[ext_resource path="res://art/SusMarioBlock.png" type="Texture" id=3]
+[ext_resource path="res://art/NotAsSusExclamationBlock.png" type="Texture" id=4]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Bloomba.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 29
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 11
+font_data = ExtResource( 1 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=6]
+0/name = "NotAsSusExclamationBlock.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 4 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "SusMarioBlock.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 16, 16 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 5 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 35, -24 )
+
+[node name="Label3" type="Label" parent="."]
+margin_left = -20.0
+margin_top = 49.0
+margin_right = 111.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 3 )
+text = "Cornhacks 2022"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = -128.0
+margin_top = -137.0
+margin_right = 232.0
+margin_bottom = -101.0
+custom_fonts/font = SubResource( 1 )
+text = "Thank You For Playing!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = -153.0
+margin_top = 37.0
+margin_right = 371.0
+margin_bottom = 55.0
+custom_fonts/font = SubResource( 2 )
+text = "Made By: Caden Fries, Danny Perry, Evan Mielak, Trey Hestermann"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 6 )
+cell_size = Vector2( 16, 16 )
+cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
+format = 1
+tile_data = PoolIntArray( -196607, 0, 0, -196606, 0, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 9, -24 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 56, -24 )

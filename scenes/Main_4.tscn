@@ -186,7 +186,7 @@ position = Vector2( 278, 150 )
 position = Vector2( 269, 123 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 175, -204 )
+position = Vector2( 15, 583 )
 
 [node name="Timer" parent="Player" instance=ExtResource( 4 )]
 visible = false

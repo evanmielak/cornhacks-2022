@@ -18,3 +18,4 @@ func _on_DeathBox_body_entered(body):
 		_animated_sprite.play("Death")
 		$CollisionShape2d.disabled = true
 		velocity.y += 20
+		get_tree().change_scene("res://scenes/Main_5.tscn")
