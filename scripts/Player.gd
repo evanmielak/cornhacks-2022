@@ -58,3 +58,6 @@ func _on_LevelTransition_body_entered(body):
 func _on_Area2D_body_entered(body):
 	if body.is_in_group("Player"):
 		get_tree().change_scene("res://scenes/Main_4.tscn")
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://scenes/Main_1.tscn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://art/Square.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://art/BlackBackground.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://art/NotAsSusExclamationBlock.png" type="Texture" id=4]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Bloomba.tscn" type="PackedScene" id=6]
+[ext_resource path="res://art/RetroRerunTitle.png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=3]
 size = 12
@@ -72,10 +73,8 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -4, -9 )
 texture = ExtResource( 2 )
-
-[node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 35, -24 )
 
 [node name="Label3" type="Label" parent="."]
 margin_left = -20.0
@@ -88,11 +87,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="RetroRerunTitle" type="Sprite" parent="."]
+position = Vector2( 28, -40 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+
 [node name="Label" type="Label" parent="."]
 margin_left = -128.0
-margin_top = -137.0
+margin_top = -128.0
 margin_right = 232.0
-margin_bottom = -101.0
+margin_bottom = -92.0
 custom_fonts/font = SubResource( 1 )
 text = "Thank You For Playing!"
 __meta__ = {
@@ -115,7 +119,10 @@ tile_set = SubResource( 6 )
 cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
-tile_data = PoolIntArray( -196607, 0, 0, -196606, 0, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0 )
+tile_data = PoolIntArray( -1, 0, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65532, 0, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 35, -24 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 6 )]
 position = Vector2( 9, -24 )

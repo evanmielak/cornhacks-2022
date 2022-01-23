@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="platformer"
-run/main_scene="res://scenes/Main_1.tscn"
+run/main_scene="res://Main_0.tscn"
 config/icon="res://art/icon.png"
 
 [autoload]
